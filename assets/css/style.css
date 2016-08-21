@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "gunsnroses";
+    src: url("../fonts/gunsnroses.ttf");
+}
+body{
+	background-image: url('../images/rocknroll.jpg');
+}
+h1{
+	font-size: 185px;
+	font-family: "gunsnroses";
+	color: black;
+}
+.main-body{
+	background-color: red;
+	margin-top: 35px;
+	height: 600px;
+	padding-top: 125px;
+	opacity: .9;
+}
