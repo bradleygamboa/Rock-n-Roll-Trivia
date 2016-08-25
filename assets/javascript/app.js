@@ -24,9 +24,9 @@ var questions = [{
     correctAnswer: "Ringo Starr",
 }, {
 
-    question: "Who is the best memeber of Guns n Roses?",
-    answers: ["Slash", "Axel Rose", "Duff McKagan", "Dizzy Reed"],
-    correctAnswer: "Slash"
+    question: "Who is Pearl Jam's #1 fan?",
+    answers: ["Fred", "Paul", "Jeff", "Eddie"],
+    correctAnswer: "Jeff"
 }, {
     question: "Who would win in a street fight?",
     answers: ["Axel Rose", "Kurt Cobain"],
@@ -67,7 +67,7 @@ var game = {
 
     },
 
-    done: function() {
+    /*done: function() {
         $.each($("input[name='question-0']:checked"), function() {
                 if ($(this).val() == questions[0].correctAnswer) {
                     game.correct++;
@@ -113,7 +113,7 @@ var game = {
             });
 
         this.results();
-    },
+    },*/
 
     results: function() {
         clearInterval(timer);
