@@ -35,4 +35,5 @@ p {
     margin-bottom: 20px;
 }
 .soundPlayer{
+	display: none;
 }
