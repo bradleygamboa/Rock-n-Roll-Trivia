@@ -52,6 +52,8 @@ var game = {
     correct: 0,
     incorrect: 0,
     counter: 90,
+    
+//counter function
     countdown: function() {
         game.counter--;
         $('#counter').html(game.counter);
@@ -127,9 +129,10 @@ var game = {
         clearInterval(timer);
         $('.questions').remove();
         $('.time').remove();
-        $('.results').append("<h3>Correct Answers: " + this.correct + "</h3>");
-        $('.results').append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
+        $('.results').append("<h3>Correct: " + this.correct + "</h3>");
+        $('.results').append("<h3>Incorrect: " + this.incorrect + "</h3>");
         $('.results').append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+    //created button manually after results are displayed    
         $(".results").append('<br><button class="btn btn-secondary btn-md" id="reset">RESET</button>');
 
     }
